@@ -22,7 +22,7 @@ Speficy the dashboard discovery plugin with
 --dm dashboard
 
 Speficy the Puppet Dashboard group with
---do <groupname>
+--do (groupname)
 
 ## Examples
 
