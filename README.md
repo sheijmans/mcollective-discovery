@@ -30,7 +30,7 @@ Speficy the Puppet Dashboard group with
 
     $ mco find --dm dashboard --do <Puppet Dashboard group>
 
-### Perfom Puppet run
+### Perform Puppet run
 
     $ mco puppet runonce --dm dashboard --do <Puppet Dashboard group>
 

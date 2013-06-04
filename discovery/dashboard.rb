@@ -11,8 +11,6 @@ module MCollective
           raise "The dashboard discovery method needs a Puppet Dashboard group specified; --do <group>"
         end
 
-        #raise "Cannot read the file %s specified as discovery source" % file unless File.readable?(file)
-
         discovered = []
 
         require 'rake'
