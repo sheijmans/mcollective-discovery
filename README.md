@@ -1,6 +1,8 @@
 # MCollective Discovery Plugin for Puppet Dashboard
 
-MCollective Discovery Plugin to discover nodes in a Puppet Dashboard group.
+MCollective Discovery Plugin to discover nodes in a Puppet Dashboard group/class.
+group: all nodes in this Puppet Dashboard group.
+class: all nodes in this Puppet Dashboard class (not the class used in a group).
 
 To use this discovery plugin you need:
   * MCollective 2.2.1 at least
@@ -24,13 +26,33 @@ Speficy the dashboard discovery plugin with
 Speficy the Puppet Dashboard group with
 --do (groupname)
 
+Speficy the Puppet Dashboard class with
+--wc (classname)
+-C (classname)
+
 ## Examples
 
 ### Finding nodes from a Puppet Dashboard group
 
     $ mco find --dm dashboard --do <Puppet Dashboard group>
 
-### Perform Puppet run
+### Finding nodes from a Puppet Dashboard class
+
+    $ mco find --dm dashboard --wc <Puppet Dashboard class>
+
+### Finding nodes from a Puppet Dashboard group and class
+
+    $ mco find --dm dashboard --do <Puppet Dashboard group> --wc <Puppet Dashboard class>
+
+### Perform Puppet run from a Puppet Dashboard group
 
     $ mco puppet runonce --dm dashboard --do <Puppet Dashboard group>
+
+### Perform Puppet run from a Puppet Dashboard class
+
+    $ mco puppet runonce --dm dashboard --wc <Puppet Dashboard class>
+
+### Perform Puppet run from a Puppet Dashboard group and class
+
+    $ mco puppet runonce --dm dashboard --do <Puppet Dashboard group> --wc <Puppet Dashboard class>
 
