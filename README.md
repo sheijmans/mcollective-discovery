@@ -1,8 +1,8 @@
 # MCollective Discovery Plugin for Puppet Dashboard
 
 MCollective Discovery Plugin to discover nodes in a Puppet Dashboard group/class.
-group: all nodes in this Puppet Dashboard group.
-class: all nodes in this Puppet Dashboard class (not the class used in a group).
+  * group: all nodes in this Puppet Dashboard group.
+  * class: all nodes in this Puppet Dashboard class (not the class used in a group).
 
 To use this discovery plugin you need:
   * MCollective 2.2.1 at least
